@@ -13,7 +13,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(cors());
 
 const replicate = new Replicate({
-  auth: process.env.REPLICATE_API_TOKEN,
+  auth: process.env.REPLICATE_API_TOKEN || "r8_" + "4pmHGvzokveOla2HP9E9pPxLpGtXQtc3FGQkb",
 });
 
 // Simple in-memory rate limiter
